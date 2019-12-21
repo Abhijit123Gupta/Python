@@ -101,7 +101,7 @@ print('hindi' in sets_cources) #more efficient that lists and tuples
 sets_cources_1 = {'hindi', 'embedded', 'VLSI', 'maths'}
 print(sets_cources_1.intersection(sets_cources))
 print(sets_cources_1.union(sets_cources))
-print(sets_cources_1.difference(sets_cources))
+print(list(sets_cources_1.difference(sets_cources)))
 
 
 

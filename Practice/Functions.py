@@ -50,7 +50,22 @@ def day_def(year, month):
 print(is_leap(2000))
 print(day_def(2020, 2))
 		
+#variable length arguements
+def func(a, *b):
+	print('It is an integer: ',a)
+	print('It is a tuple: ',b)
 
+func(12, 1, 2, 3)
+
+
+#keyworded variable length arguement
+def func_1(a, **b):
+	print('It is an integer: ',a)
+	print('It is a dictionary: ',b)
+	for key,value in b.items():
+		print(key,':',value)
+
+func_1(12, name = 'Abhijit', age = 18, gender= 'M')	
 
 
 
